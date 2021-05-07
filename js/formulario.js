@@ -45,7 +45,7 @@ function validar() {
     mensaje =  document.getElementById("mensaje").value;
     expresionNombre = /^[a-zA-ZÀ-ÿ\s]{3,20}$/;
     expresionEmail = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-    expresionCuit = /^(20|23|27|30|33)[\s-.]?\d{8}[\s-.]?\d{1}$/;
+    expresionCuit = /^(20|23|27|30|33|34)[\s-.]?\d{8}[\s-.]?\d{1}$/;
     expresionAsunto = /^[a-zA-Z0-9\_\-]{2,40}$/;
     expresionMensaje = /^[a-zA-Z0-9\_\-]{4,1200}$/;
     error = "";
@@ -80,7 +80,7 @@ function validar() {
         if (error !== "") {
             error += "\n";
         }
-        error += "El cuit tiene que tener mas de 11 nros e iniciar con 27 o 30";   
+        error += "El cuit tiene que tener mas de 11 caracteres e iniciar con alguno de los siguientes Números: 20,23,27,30,33 o 34";   
     }
     // else if (cuit.length < 11 || cuit.length > 13) {
     //     if (error !== "") {
