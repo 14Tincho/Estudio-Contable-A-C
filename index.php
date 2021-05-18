@@ -225,18 +225,19 @@
                             <h3 class="htresContacto">Envianos tu consulta</h3>
                         </div>
                         <div  class="divForm">
-                            <form action="envio.php" class="formulario" id="formulario" onsubmit="return validar();">
+                            <form action="enviar.php" method="POST" class="formulario" id="formulario" onsubmit="return validar();">
                                 <div class="d-md-flex d-block">
                                     <div class="formularioCon form-group">
                                         <div class="contInputs">
-                                            <input type="text" placeholder=" Nombre*" id="nombre" class="inputs" minlength="3" maxlength="20" >
-                                            <input type="email" placeholder=" E-mail*" id="email" class="inputs"  minlength="7" maxlength="40" >
-                                            <input type="text" placeholder=" C.U.I.T./C.U.I.L." id="cuit" class="inputs" minlength="11" maxlength="13">
-                                            <input type="text" placeholder=" Asunto" id="asunto" class="inputs" minlength="2" maxlength="40" >
+                                            <input type="text" name="nombre" placeholder=" Nombre*"  id="nombre" class="inputs" minlength="3" maxlength="20" >
+                                            <input type="email" name="email" placeholder=" E-mail*"  id="email" class="inputs"  minlength="7" maxlength="40" >
+                                            <input type="email" name="emailDos" placeholder=" Repetir E-mail*"  id="emailDos" class="inputs"  minlength="7" maxlength="40" >
+                                            <input type="text" name="cuit" placeholder=" C.U.I.T./C.U.I.L."  id="cuit" class="inputs" minlength="11" maxlength="13">
+                                            <input type="text" name="asunto" placeholder=" Asunto"  id="asunto" class="inputs" minlength="2" maxlength="40" >
                                         </div>
                                     </div>
                                     <div class="formularioCon form-group">
-                                        <textarea placeholder=" Mensaje*" id="mensaje" class="mensaje" minlength="4" maxlength="1200" ></textarea>
+                                            <textarea name="mensaje" placeholder=" Mensaje*" id="mensaje" class="mensaje" minlength="4" maxlength="1200" ></textarea>
                                     </div>
                                 </div>
                                 <input class="btn btn-outline-primary boton" type="submit" value="Enviar">                                                    
