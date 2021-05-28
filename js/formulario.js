@@ -13,8 +13,6 @@ function validar() {
     expresionMensaje = /^[a-zA-Z0-9\_\-\D]{4,1200}$/;
     error = "";
 
-    console.log(emailDos);
-
 
     // if (nombre === "" || nombre.length < 3 || nombre.length > 20) {
     //     error += "El nombre es obligatorio y tiene que tener mas de 3 caracteres y menos de 20";
@@ -42,7 +40,7 @@ function validar() {
         if (error !== "") {
             error += "\n";
         }
-        error += "La repeticion de email obligatoria y tiene que contener entre 7 y 40 caracteres";
+        error += "Debe repetir el email";
     }else if (!expresionEmail.test(emailDos)) {
         if (error !== "") {
             error += "\n";

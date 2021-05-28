@@ -230,8 +230,8 @@
                                     <div class="formularioCon form-group">
                                         <div class="contInputs">
                                             <input type="text" name="nombre" placeholder=" Nombre*"  id="nombre" class="inputs" minlength="3" maxlength="20" >
-                                            <input type="email" name="email" placeholder=" E-mail*"  id="email" class="inputs"  minlength="7" maxlength="40" >
-                                            <input type="email" name="emailDos" placeholder=" Repetir E-mail*"  id="emailDos" class="inputs"  minlength="7" maxlength="40" >
+                                            <input type="email" name="email" placeholder=" E-mail*"  id="email" class="inputs"  minlength="7" maxlength="40" onpaste="return false">
+                                            <input type="text" name="emailDos" placeholder=" Repetir E-mail*"  id="emailDos" class="inputs"  minlength="7" maxlength="40" onpaste="return false" autocomplete="off" >
                                             <input type="text" name="cuit" placeholder=" C.U.I.T./C.U.I.L."  id="cuit" class="inputs" minlength="11" maxlength="13">
                                             <input type="text" name="asunto" placeholder=" Asunto"  id="asunto" class="inputs" minlength="2" maxlength="40" >
                                         </div>
